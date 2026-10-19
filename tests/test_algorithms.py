@@ -43,7 +43,6 @@ class SearchAlgorithmTests(unittest.TestCase):
         result = breadth_first_search(
             3, 3, walls, (0, 0), (2, 2)
         )
-
         self.assertTrue(result.found)
         self.assertTrue(
             all(cell not in walls for cell in result.path)
