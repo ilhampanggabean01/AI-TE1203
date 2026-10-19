@@ -7,7 +7,6 @@ sys.path.insert(0, str(Path(__file__).parents[1] / "src"))
 from maze_solver.algorithms import breadth_first_search, depth_first_search
 from maze_solver.expert_system import diagnose
 
-
 class SearchAlgorithmTests(unittest.TestCase):
     def test_bfs_finds_shortest_path_on_open_grid(self):
         result = breadth_first_search(3, 3, set(), (0, 0), (2, 2))
